@@ -1,87 +1,70 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html> <!-- Déclare le type de document HTML5 -->
+<html lang="fr"> <!-- Début du document HTML, langue française -->
 <head>
-    <meta charset="UTF-8">
-    <title>Tableaux HTML / JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <title>Tableaux HTML / JS</title> <!-- Titre affiché dans l'onglet du navigateur -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" /> <!-- Responsive design -->
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css"> <!-- Normalise le rendu CSS entre navigateurs -->
+    <link rel="stylesheet" href="./css/main.css"> <!-- Feuille de style personnalisée -->
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png"> <!-- Icône pour appareils Apple -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png"> <!-- Favicon 32x32 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png"> <!-- Favicon 16x16 -->
+    <link rel="manifest" href="./img/favicon/site.webmanifest"> <!-- Fichier manifest pour PWA -->
 </head>
 <body>
 
-<h1>Tableaux HTML / JS</h1>
+<h1>Tableaux HTML / JS</h1> <!-- Titre principal de la page -->
+
+<p>
+    <label for="rechercher">Rechercher</label> <!-- Libellé du champ de recherche -->
+    <input type="text" id="rechercher"> <!-- Champ de recherche pour filtrer le tableau -->
+</p>
 
 <table>
     <thead>
-        <tr>
-            <th>Prénom</th>
-            <th>Nom</th>
-            <th>Age</th>
-            <th>Localité</th>
-        </tr>
+    <tr>
+        <th>Prénom</th> <!-- En-tête colonne prénom -->
+        <th>Nom</th> <!-- En-tête colonne nom -->
+        <th>Age</th> <!-- En-tête colonne âge -->
+        <th>Localité</th> <!-- En-tête colonne localité -->
+    </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>25</td>
-            <td>Paris</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-            <td>22</td>
-            <td>Lyon</td>
-        </tr>
-        <tr>
-            <td>Jack</td>
-            <td>Smith</td>
-            <td>30</td>
-            <td>Marseille</td>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>28</td>
-            <td>Bordeaux</td>
-        </tr>
+    <tbody class="personnes">
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>25</td>
+        <td>Paris</td>
+    </tr>
     </tbody>
 </table>
 
-<form action="https://kode.ch/getpost" method="post">
+<form action="https://kode.ch/getpost" method="post"> <!-- Formulaire d'ajout de personne -->
     <ul>
         <li>
             <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom">
+            <input type="text" id="prenom" name="prenom"> <!-- Saisie du prénom -->
         </li>
         <li>
             <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom">
+            <input type="text" id="nom" name="nom"> <!-- Saisie du nom -->
         </li>
         <li>
             <label for="age">Age</label>
-            <input type="number" id="age" name="age">
+            <input type="text" id="age" name="age"> <!-- Saisie de l'âge -->
         </li>
         <li>
             <label for="localite">Localité</label>
-            <input type="text" id="localite" name="localite">
+            <input type="text" id="localite" name="localite"> <!-- Saisie de la localité -->
         </li>
         <li>
-            <button type="submit">Ajouter</button>
+            <button type="submit">Ajouter</button> <!-- Bouton pour soumettre le formulaire -->
         </li>
     </ul>
 </form>
 
-
-<script src="js/main.js"></script>
+<script src="js/main.js"></script> <!-- Inclusion du script JavaScript principal -->
 </body>
 </html>
-
-
